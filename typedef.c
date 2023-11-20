@@ -26,7 +26,7 @@ union cifdg {
 
 int main()
 {
-    /// yukaridaki tanitici sözcükler degisken ya da donksiyon degillerdir (typedef olmasaydi öyle olacakti)
+    /// yukaridaki tanitici sözcükler degisken ya da fonksiyon degillerdir (typedef olmasaydi öyle olacakti)
     typedef unsigned short int kisa;
     typedef char *kdizisi, *kdfonk(char*, char*);
     typedef struct {float ger, im; } kompleks;
@@ -45,11 +45,11 @@ int main()
     printf("%zu %zu %zu %zu %zu new = %zu (Note: All values are byte)\n", sizeof(int), sizeof(float), sizeof(double), sizeof(int*), sizeof(kompleks[3]), sizeof(a[1]));
     printf("%zu %zu %zu %zu %zu (Note: All values are byte)\n", sizeof(vektor), sizeof(long[4]), sizeof(struct{char *c; vektor v[5];}), sizeof *s1, sizeof(a[1]));
     printf("%zu\n", sizeof(signed int));
-    /// %zu dönüþüm tanýmlamasý beklenen argümanýn size_t boyutunda olduðunu belirtir.
+    /// %zu dönüsüm tanimlamasi beklenen argümanin size_t boyutunda oldugunu belirtir.
     // size_t
 
     /// union (Birlikler)
-    // 5 adet yerpaylasimli ðyeden olusan bd birlik degiskeni tanimlandi..
+    // 5 adet yerpaylasimli oyeden olusan bd birlik degiskeni tanimlandi..
 
 
     printf("new == %zu\n", sizeof(bd));
