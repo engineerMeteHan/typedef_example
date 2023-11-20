@@ -1,4 +1,6 @@
 //-----------------------------------------------------------------------------
+// DATE : 2023 - 11 - 20
+/// This software code was created by Metehan GENCER who is an Embedded System Engineer
 #include <stdio.h>
 #define MAKSKS 10
 #define MAKSCCK 15
@@ -24,7 +26,7 @@ union cifdg {
 
 int main()
 {
-    /// yukarýdaki tanýtýcý sözcükler deðiþken ya da donksiyon deðillerdir (typedef olmasaydý öyle olacaktý)
+    /// yukaridaki tanitici sÃ¶zcÃ¼kler degisken ya da donksiyon degillerdir (typedef olmasaydi Ã¶yle olacakti)
     typedef unsigned short int kisa;
     typedef char *kdizisi, *kdfonk(char*, char*);
     typedef struct {float ger, im; } kompleks;
@@ -43,11 +45,11 @@ int main()
     printf("%zu %zu %zu %zu %zu new = %zu (Note: All values are byte)\n", sizeof(int), sizeof(float), sizeof(double), sizeof(int*), sizeof(kompleks[3]), sizeof(a[1]));
     printf("%zu %zu %zu %zu %zu (Note: All values are byte)\n", sizeof(vektor), sizeof(long[4]), sizeof(struct{char *c; vektor v[5];}), sizeof *s1, sizeof(a[1]));
     printf("%zu\n", sizeof(signed int));
-    /// %zu dönüþüm tanýmlamasý beklenen argümanýn size_t boyutunda olduðunu belirtir.
+    /// %zu dÃ¶nÃ¼Ã¾Ã¼m tanÃ½mlamasÃ½ beklenen argÃ¼manÃ½n size_t boyutunda olduÃ°unu belirtir.
     // size_t
 
     /// union (Birlikler)
-    // 5 adet yerpaylaþýmlý ðyeden oluþan bd birlik deðiþkeni tanýmlandý..
+    // 5 adet yerpaylasimli Ã°yeden olusan bd birlik degiskeni tanimlandi..
 
 
     printf("new == %zu\n", sizeof(bd));
