@@ -49,7 +49,7 @@ int main()
     // size_t
 
     /// union (Birlikler)
-    // 5 adet yerpaylasimli oyeden olusan bd birlik degiskeni tanimlandi..
+    // 5 adet yerpaylasimli ogeden olusan bd birlik degiskeni tanimlandi..
 
 
     printf("new == %zu\n", sizeof(bd));
